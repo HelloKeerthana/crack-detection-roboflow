@@ -6,8 +6,8 @@ import requests
 image_path = "C:\\Users\\satya\\OneDrive\\Desktop\\keerthana\\DL_APSAC\\ds\\DATASET\\DJI_20241230150518_0084_D.JPG"
 tile_size = 640
 overlap = 0.2
-api_key = "QqhjcOJTROa9Ib7T08PG"
-model_id = "crackdetection02/2"
+api_key = "***************"
+model_id = "*********************"
 confidence_threshold = 0.3
 nms_iou_threshold = 0.4
 
