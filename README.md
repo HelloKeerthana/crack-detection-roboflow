@@ -36,6 +36,7 @@ project_url = "https://infer.roboflow.com/YOUR_PROJECT"
 image_path = "path/to/your/image.jpg"
 tile_size = 640  # Adjust based on model input
 overlap = 0.2    # For tile overlap
+
 🚀 How It Works
 Tile the Image
 Large image is split into overlapping tile_size × tile_size chunks.
@@ -52,26 +53,9 @@ Suppresses overlapping boxes to keep only the best ones.
 Visualize & Save
 Final image is saved with bounding boxes and labels.
 
-🖼️ Example Output
-
-🧪 Sample Command
-
-python crack_detection.py
-📈 Next Improvements (TODO)
- Add GUI for image upload and preview
-
- Batch process folder of images
-
- Add support for local model inference (YOLOv5)
-
 🤝 Acknowledgments
 Roboflow for model hosting
 
 YOLO architecture for detection
 
 OpenCV and NumPy for processing
-
-📬 Contact
-For queries or improvements, reach out to Keerthana ✨
-
-Let me know if you want a version that supports webcam feed or video too — or want to add CLI arguments
