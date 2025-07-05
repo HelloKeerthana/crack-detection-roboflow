@@ -3,7 +3,7 @@ import numpy as np
 import requests
 
 # ---- Configuration ----
-image_path = "C:\\Users\\satya\\OneDrive\\Desktop\\keerthana\\DL_APSAC\\ds\\DATASET\\DJI_20241230150518_0084_D.JPG"
+image_path = "image.png"
 tile_size = 640
 overlap = 0.2
 api_key = "***************"
@@ -85,6 +85,6 @@ for i in indices:
     cv2.rectangle(final_image, (x1, y1), (x2, y2), (0, 0, 0), thickness=10)
 
 # ---- Save Output ----
-output_path = "C:\\Users\\satya\\OneDrive\\Desktop\\keerthana\\DL_APSAC\\detections_output01.jpg"
+output_path = "imageop.png"
 cv2.imwrite(output_path, final_image)   
 print(f" Saved result to: {output_path}")   
