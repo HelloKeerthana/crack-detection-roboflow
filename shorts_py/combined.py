@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 
-# ✅ Correct base directory path
 base_dir = r"C:\Users\satya\OneDrive\Desktop\keerthana\DL_APSAC\Crack Detection.v1i.yolov8"
 
 splits = ['train', 'valid', 'test']
@@ -11,7 +10,7 @@ for split in splits:
     labels_dir = os.path.join(base_dir, split, "labels")
 
     if not os.path.exists(labels_dir):
-        print(f"❌ Folder not found: {labels_dir}")
+        print(f" :( not found: {labels_dir}")
         continue
 
     for file in os.listdir(labels_dir):
@@ -34,7 +33,8 @@ for split in splits:
                             'height': float(height)
                         })
 
-# ✅ Convert to DataFrame and save
+# Convert to DataFrame and save
 df = pd.DataFrame(rows)
 df.to_csv("combined_labels.csv", index=False)
-print("✅ combined_labels.csv created with", len(df), "annotations.")
+print("combined_labels.csv created with", len(df), "annotations.")
+
