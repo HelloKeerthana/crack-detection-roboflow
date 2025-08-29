@@ -1,34 +1,34 @@
-# 🧠 Crack Detection using Tiling, Roboflow API, and NMS
+# Crack Detection using Tiling, Roboflow API, and NMS
 
 This project implements **automated crack detection** in high-resolution drone or structural 
 images using **image tiling**, **Roboflow model inference**, and **Non-Maximum Suppression (NMS)** to accurately localize and visualize cracks.
 
 ---
 
-## 📌 Features
+## Features
 
-- ✅ Image **tiling** to handle large-resolution inputs
-- ✅ Inference using **Roboflow-hosted YOLO model**
-- ✅ Smart **Non-Maximum Suppression (NMS)** to merge overlapping boxes
-- ✅ OpenCV-based **visualization** with bounding boxes and coordinates
-- ✅ Saves final output with annotations and optionally prints box coordinates
+-  Image **tiling** to handle large-resolution inputs
+-  Inference using **Roboflow-hosted YOLO model**
+-  Smart **Non-Maximum Suppression (NMS)** to merge overlapping boxes
+-  OpenCV-based **visualization** with bounding boxes and coordinates
+-  Saves final output with annotations and optionally prints box coordinates
 
 ---
 
-## 🧰 Requirements
+## Requirements
 
 Install dependencies using `pip install -r requirements.txt`
 
 opencv-python
 numpy
 requests
-📂 File Structure
+ File Structure
 .
 ├── crack_detection.py        # Main script: tiling, inference, NMS
 ├── utils.py                  # (Optional) helper functions (tiling, NMS)
 ├── image.jpg                 # Your input image
 └── output.jpg                # Saved result after detection
-⚙️ Configuration
+ Configuration
 Edit these inside crack_detection.py:
 
 api_key = "YOUR_ROBOFLOW_API_KEY"
@@ -37,7 +37,7 @@ image_path = "path/to/your/image.jpg"
 tile_size = 640  # Adjust based on model input
 overlap = 0.2    # For tile overlap
 
-🚀 How It Works
+ How It Works
 Tile the Image
 Large image is split into overlapping tile_size × tile_size chunks.
 
@@ -53,7 +53,7 @@ Suppresses overlapping boxes to keep only the best ones.
 Visualize & Save
 Final image is saved with bounding boxes and labels.
 
-🤝 Acknowledgments
+ Acknowledgments
 Roboflow for model hosting
 
 YOLO architecture for detection
