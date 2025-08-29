@@ -1,23 +1,22 @@
 import os
 import cv2
 
-# 📁 Set your paths
 INPUT_DIR = r"C:\Users\satya\OneDrive\Desktop\keerthana\DL_APSAC\ds\DATASET"
 OUTPUT_DIR = r"C:\Users\satya\OneDrive\Desktop\keerthana\DL_APSAC\ds\tiled_dataset"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# 📏 Tiling parameters
+# Tiling parameters
 TILE_SIZE = 640
 OVERLAP = 0
 STEP = TILE_SIZE - OVERLAP
 
-# 🔁 Tile each image
+# Tile each image
 for fname in os.listdir(INPUT_DIR):
     if fname.lower().endswith(('.jpg', '.jpeg', '.png')):
         img_path = os.path.join(INPUT_DIR, fname)
         img = cv2.imread(img_path)
         if img is None:
-            print(f"❌ Couldn't read {fname}")
+            print(f"Couldn't read {fname}")
             continue
 
         h, w = img.shape[:2]
@@ -32,4 +31,5 @@ for fname in os.listdir(INPUT_DIR):
                 cv2.imwrite(tile_path, tile)
                 count += 1
 
-        print(f"✅ Tiled {fname} into {count} patches.")
+        print(f"Tiled {fname} into {count} patches.")
+
