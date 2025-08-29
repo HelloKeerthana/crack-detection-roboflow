@@ -1,7 +1,7 @@
 import os
 import cv2
 
-input_folder = "C:\\Users\\satya\\OneDrive\\Desktop\\keerthana\\DL_APSAC\\ds\\DATASET"       # Folder where your original 504 images are
+input_folder = "C:\\Users\\satya\\OneDrive\\Desktop\\keerthana\\DL_APSAC\\ds\\DATASET"
 output_folder = "resized_images"  # Folder to save resized versions
 os.makedirs(output_folder, exist_ok=True)
 
@@ -16,4 +16,5 @@ for file in os.listdir(input_folder):
         save_path = os.path.join(output_folder, file)
         cv2.imwrite(save_path, resized)
 
-print("✅ All images resized and saved to 'resized_images' folder.")
+print("all images resized and saved to 'resized_images' folder.")
+
