@@ -31,4 +31,5 @@ for i in range(0, len(all_images), batch_size):
         if os.path.exists(label_path):
             shutil.copy(label_path, os.path.join(lbl_out, label_name))
 
-    print(f"✅ Created batch{batch_num} with {len(all_images[i:i+batch_size])} files")
+    print(f"created batch{batch_num} with {len(all_images[i:i+batch_size])} files")
+
