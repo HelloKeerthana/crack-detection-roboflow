@@ -58,4 +58,4 @@ Roboflow for model hosting
 
 YOLO architecture for detection
 
-OpenCV and NumPy for processing
+OpenCV and NumPy for processing GIVE THIS IN HTML TAGS NO BOILERPLATE JUST THE TAGS elements
